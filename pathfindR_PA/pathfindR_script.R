@@ -27,5 +27,8 @@ collated_TCGA_enrichment_data <- read.csv("~/R/R Local Projects/friendly-octo-sn
 # Pathway Enrichment Analysis:
 ## Change File Name ##
 ### Change the p_val_threshold back down to an appropriate level ###
+#### search_method = SA or GA?!? ####
+##### non_DEG_Active_Snw_Genes = T #####
 
-PEA_results <- run_pathfindR(collated_TCGA_enrichment_data)
+PEA_results <- run_pathfindR(collated_TCGA_enrichment_data, p_val_threshold = 0.7,
+                             enrichment_threshold = 0.1, sig_gene_thr = 0)
