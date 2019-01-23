@@ -31,4 +31,6 @@ collated_TCGA_enrichment_data <- read.csv("~/R/R Local Projects/friendly-octo-sn
 ##### non_DEG_Active_Snw_Genes = T #####
 
 PEA_results <- run_pathfindR(collated_TCGA_enrichment_data, p_val_threshold = 0.7,
-                             enrichment_threshold = 0.1, sig_gene_thr = 0)
+                             enrichment_threshold = 0.1, sig_gene_thr = 0,
+                             search_method = "SA", list_active_snw_genes = T)
+
