@@ -11,3 +11,10 @@ BiocManager::install("org.Hs.eg.db", version = "3.8")
 if (!requireNamespace("pathfindR", quietly = TRUE))
   install.packages("pathfindR")
 
+# Load Packages:
+
+packages <- c("BiocManager", "pathview", "AnnotationDbi", "org.Hs.eg.db", "pathfindR")
+
+lapply(packages, FUN = function(X) {
+  do.call("require", list(X)) 
+})
