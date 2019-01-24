@@ -41,9 +41,9 @@ data(entrez_TCGA_enriched)
 de <- names(entrez_TCGA_enriched)[abs(entrez_TCGA_enriched) > 1.5]
 head(de)
 
-output2 <- enrichPathway(entrez_TCGA_enriched, pvalueCutoff = 0.1, 
-                         readable = T)
-head(as.data.frame(output2))
+outputUT <- enrichPathway(entrez_TCGA_enriched, pvalueCutoff = 0.1,
+                        pAdjustMethod = "BH", readable = T)
+head(as.data.frame(outputUT))
 
-
-
+### Not finished as not sure ReactomePA will give good results
+#### Going to try with reactome.db package
