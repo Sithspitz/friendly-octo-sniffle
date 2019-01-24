@@ -32,7 +32,17 @@ df2 <- transpose(df1)
 df3 <- bitr(df2, 
                              fromType = "SYMBOL", OrgDb = "org.Hs.eg.db", 
                              toType = "ENTREZID")
-entrez_TCGA_enriched <- df3[,2, drop = F]
+df4 <- df3[,2, drop = F]
+df5 <- transpose(df4)
+entrez_TCGA_enriched <- as.numeric(as.character(df5))
+
+
+data(entrez_TCGA_enriched)
+de <- names(entrez_TCGA_enriched)[abs(entrez_TCGA_enriched) > 1.5]
+head(de)
+
+
+
 
 
 
