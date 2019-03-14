@@ -1,0 +1,8 @@
+"as.character(kras_stk11_test_fisher)"
+"1" "0.59746103317025"
+"2" "c(0.27143674420826, 2.38848753669809)"
+"3" "c(`odds ratio` = 0.745621205759139)"
+"4" "c(`odds ratio` = 1)"
+"5" "two.sided"
+"6" "Fisher's Exact Test for Count Data"
+"7" "kras_stk11_test"

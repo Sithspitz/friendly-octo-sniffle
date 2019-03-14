@@ -1,0 +1,8 @@
+"as.character(stk11_test_fisher)"
+"1" "0.579355995320588"
+"2" "c(0.262244734811495, 2.79813610740803)"
+"3" "c(`odds ratio` = 0.775327586381511)"
+"4" "c(`odds ratio` = 1)"
+"5" "two.sided"
+"6" "Fisher's Exact Test for Count Data"
+"7" "stk11_test"
